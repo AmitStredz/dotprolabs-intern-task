@@ -1,9 +1,11 @@
-import React, { useState } from "react";
-import { FiMinus, FiPlus } from "react-icons/fi";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
 
 export default function Page3() {
-  const [activeIndex, setActiveIndex] = useState<number | null>(null);
-
   const faqs = [
     {
       question: "How do I get a Referral Code?",
@@ -20,43 +22,24 @@ export default function Page3() {
     },
   ];
 
-  const toggleFAQ = (index: number) => {
-    setActiveIndex(index === activeIndex ? null : index);
-  };
-
   return (
-    <section className="bg-[#0b1120] text-white py-16">
-      <div className="text-center mb-8">
-        <h2 className="text-4xl font-bold text-white">
-          <span className="text-yellow-500">FAQs</span>
-        </h2>
-      </div>
-      <div className="max-w-4xl mx-auto px-4">
-        {faqs.map((faq, index) => (
-          <div
-            key={index}
-            className={`border-b border-gray-700 py-4 ${
-              index === activeIndex ? "bg-[#131a2a]" : ""
-            }`}
-          >
-            <div
-              className="flex justify-between items-center cursor-pointer"
-              onClick={() => toggleFAQ(index)}
-            >
-              <h3 className="text-lg font-medium">{faq.question}</h3>
-              <div className="text-gray-400">
-                {index === activeIndex ? (
-                  <FiMinus size={24} />
-                ) : (
-                  <FiPlus size={24} />
-                )}
-              </div>
-            </div>
-            {index === activeIndex && (
-              <p className="mt-4 text-sm text-gray-400">{faq.answer}</p>
-            )}
-          </div>
-        ))}
+    <section className="flex items-center justify-center w-screen h-full text-white py-16">
+      <div className="bg-white bg-opacity-[0.02] rounded-xl p-5 w-[70%]">
+        <div className="text-center mb-8">
+          <h2 className="text-5xl  text-white">
+            <span className="text-yellow-500 font-NeueMachina-Bold">FAQs</span>
+          </h2>
+        </div>
+        <div className="flex flex-col gap-5 font-Raleway z-50">
+          {faqs.map((faq, index) => (
+            <Accordion type="single" collapsible key={index} className="z-50">
+              <AccordionItem value="item-1">
+                <AccordionTrigger className="text-[16px] duration-500">{faq?.question}</AccordionTrigger>
+                <AccordionContent className="text-slate-400">{faq?.answer}</AccordionContent>
+              </AccordionItem>
+            </Accordion>
+          ))}
+        </div>
       </div>
     </section>
   );

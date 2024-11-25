@@ -1,4 +1,3 @@
-import React from "react";
 import moonexLogo from "../assets/moonexLogo.png";
 import uniswapLogo from "../assets/uniswapLogo.png";
 import comparisonLogo from "../assets/comparisonLogo.png";

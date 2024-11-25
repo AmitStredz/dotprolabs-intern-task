@@ -1,4 +1,3 @@
-import React from "react";
 import { BsFillTelephoneXFill } from "react-icons/bs";
 import { FiDollarSign } from "react-icons/fi";
 import { HiOutlineAdjustmentsHorizontal } from "react-icons/hi2";

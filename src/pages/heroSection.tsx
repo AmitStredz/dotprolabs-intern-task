@@ -1,4 +1,3 @@
-import { Button } from "@/components/ui/button";
 import Navbar from "../components/navbar";
 import Page1 from "./page1";
 import Page2 from "./page2";

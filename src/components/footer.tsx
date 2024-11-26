@@ -7,7 +7,7 @@ export default function Footer() {
       <div className="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
         {/* Logo Section */}
         <div className="flex items-center space-x-2 z-50">
-            <img src="/logo2.png" alt="Moonex Logo" className="w-32" />
+          <img src="/logo2.png" alt="Moonex Logo" className="w-32" />
         </div>
 
         {/* Navigation Links */}

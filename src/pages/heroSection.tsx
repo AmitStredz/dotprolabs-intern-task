@@ -66,8 +66,7 @@ const HeroSection = () => {
         src="/SpiralLogo.svg"
         className="absolute -top-10 left-20 -rotate-12 "
       ></img>
-      <div className="absolute top-24 right-[50rem] w-80 h-80 bg-gradient-to-br from-[#f1f1db] via-[#E3B30C] to-[#e7d69ad6] rounded-full z-50 hover:shadow-[0px_0px_40px_5px_rgba(255,255,0,0.7)] hover:shadow-yellow-300 transition-all  duration-500"></div>
-      <div className="absolute top-0 left-0 w-full h-full twinkling-star z-50"></div>
+      <div className="absolute top-24 right-[40rem] w-60 h-60 bg-gradient-to-br from-[#f1f1db] via-[#E3B30C] to-[#e7d69ad6] rounded-full z-50 hover:shadow-[0px_0px_40px_5px_rgba(255,255,0,0.7)] hover:shadow-yellow-300 transition-all  duration-500"></div>
 
       <div className="absolute top-0 left-0 w-screen h-full z-10">
         <StarAnimation />

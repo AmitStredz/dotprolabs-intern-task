@@ -13,7 +13,7 @@ const HeroSection = () => {
       <Navbar />
 
       {/* Content */}
-      <div className="flex justify-start sm:items-end w-screen sm:h-screen sm:p-20">
+      <div className="flex justify-start sm:items-end w-screen sm:h-screen sm:p-20 lg:-mt-20">
         <div className="flex flex-col gap-5 sm:justify-end h-full p-5 sm:p-10 z-50">
           <div className="text-3xl md:text-7xl font-bold font-NeueMachina-Bold ">
             <h1>Trusted Multi-Chain</h1>
@@ -28,7 +28,7 @@ const HeroSection = () => {
             <span className="relative z-10">Connect Wallet</span>
               <span className="absolute inset-0 bg-[#071624] transform -translate-x-full group-hover:translate-x-0 transition-transform duration-300 ease-in-out"></span>
             </button>
-            <button className="relative bg-yellow-400 text-black text-[12px] sm:text-[16px] hover:text-yellow-400 hover:text-yell p-2 sm:px-6 sm:py-3 rounded-full overflow-hidden group border border-yellow-400 z-50">
+            <button className="relative bg-transparent text-yellow-400 text-[12px] sm:text-[16px] hover:text-black hover:text-yell p-2 sm:px-6 sm:py-3 rounded-full overflow-hidden group border border-yellow-400 z-50">
             <span className="relative z-10">Trade Crypto</span>
               <span className="absolute inset-0 bg-yellow-400 transform -translate-x-full group-hover:translate-x-0 transition-transform duration-300 ease-in-out"></span>
             </button>

@@ -10,7 +10,7 @@ export default function Footer() {
           <img src="/logo2.png" alt="Moonex Logo" className="w-32" />
         </div>
 
-        <div className="flex  gap-5">
+        <div className="flex  gap-5 justify-evenly items-center w-full">
           {/* Navigation Links */}
           <nav className="flex flex-col sm:flex-row gap-2 sm:gap-20 font-Raleway font-bold text-[12px] sm:text-[16px] z-50">
             {/* <a className="relative hover:text-yellow-400 group cursor-pointer">

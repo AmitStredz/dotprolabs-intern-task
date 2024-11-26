@@ -23,8 +23,8 @@ export default function Page3() {
   ];
 
   return (
-    <section className="flex items-center justify-center w-screen h-full text-white py-16">
-      <div className="bg-white bg-opacity-[0.02] rounded-xl p-5 w-[70%]">
+    <section className="flex items-center justify-center w-screen h-full text-white p-3 py-16">
+      <div className="bg-white bg-opacity-[0.02] rounded-xl p-3 sm:p-5 sm:w-[70%]">
         <div className="text-center mb-8">
           <h2 className="text-5xl  text-white">
             <span className="text-yellow-500 font-NeueMachina-Bold">FAQs</span>

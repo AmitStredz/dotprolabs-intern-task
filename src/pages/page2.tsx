@@ -31,9 +31,9 @@ export default function Page2() {
   ];
 
   return (
-    <section className="p-20 px-32 z-50">
+    <section className="max-sm:py-10 sm:p-20 sm:px-32 z-50">
       <div className="text-center mb-12 z-50">
-        <h2 className="text-5xl font-bold font-NeueMachina-Bold text-white z-50">
+        <h2 className="text-3xl sm:text-5xl font-bold font-NeueMachina-Bold text-white z-50">
           Our <span className="text-yellow-500 z-50">Features</span>
         </h2>
       </div>
